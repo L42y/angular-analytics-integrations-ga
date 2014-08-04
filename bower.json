@@ -1,0 +1,26 @@
+{
+  "name": "angular-analytics-integrations-ga",
+  "main": "angular-analytics-integrations-ga.js",
+  "version": "0.1.0",
+  "authors": [
+    "L42y <423300@gmail.com>"
+  ],
+  "description": "Google Classic Analytics (ga.js) integration for angular-analytics",
+  "keywords": [
+    "angular",
+    "analytics",
+    "google"
+  ],
+  "license": "WTFPL",
+  "homepage": "https://github.com/L42y/angular-analytics-integrations-ga",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-analytics": "L42y/angular-analytics#~0.1.0"
+  }
+}

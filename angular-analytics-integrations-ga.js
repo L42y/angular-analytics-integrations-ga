@@ -7,12 +7,12 @@ angular.module('l42y.analytics.integrations.ga', [
   var variableName = '_gaq';
 
   var config = AnalyticsProvider.config.integrations[identifier];
-  (function (window, document, script, variableName, config, firstScript) {
+  (function (window, document, script, variableName, config, scriptElement, firstScript) {
     window[variableName] = [
       ['_setAccount', config.accountId],
       ['_setDomainName', config.domain || 'auto']
     ];
-    var scriptElement = document.createElement(script);
+    scriptElement = document.createElement(script);
     scriptElement.src='//www.google-analytics.com/ga.js';
     firstScript = document.getElementsByTagName(script)[0];
     firstScript.parentNode.insertBefore(scriptElement, firstScript);
